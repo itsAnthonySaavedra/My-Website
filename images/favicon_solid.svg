@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Solid Black Background with rounded corners -->
+  <!-- Added white stroke so the box is visible even on pitch black backgrounds -->
+  <rect x="5" y="5" width="90" height="90" rx="20" fill="black" stroke="white" stroke-width="2" />
+  
+  <!-- White Text -->
+  <text x="50" y="55" 
+        font-family="Arial, sans-serif" 
+        font-weight="900" 
+        font-size="55px" 
+        fill="white" 
+        text-anchor="middle" 
+        dominant-baseline="central">AS.</text>
+</svg>

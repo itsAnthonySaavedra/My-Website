@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <style>
+    text {
+      font-family: sans-serif;
+      font-weight: 900;
+      font-size: 70px;
+      text-anchor: middle;
+      dominant-baseline: central;
+      
+      /* Universal Visibility Strategy: White Text with Thick Black Outline */
+      /* visible on White (due to outline) and Black (due to fill) */
+      fill: #ffffff;
+      stroke: #000000;
+      stroke-width: 6px; 
+      paint-order: stroke;
+    }
+  </style>
+  <!-- Background rect for testing (transparent in prod) -->
+  <text x="50" y="55">AS.</text>
+</svg>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anthony Saavedra | Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="CSS/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="images/favicon_solid.svg" />
+</head>
+
+<body>
+  <!-- Background Elements -->
+  <div class="background-gradient"></div>
+  <div class="noise-overlay"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-content">
+      <a href="#hero" class="logo">AS.</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <span class="greeting fade-in">Hello, I'm</span>
+        <h1 class="name fade-in-delay-1">Anthony Saavedra</h1>
+        <h2 class="title fade-in-delay-2">
+          Aspiring <span class="gradient-text">Front-End Web Developer</span>
+        </h2>
+        <p class="hero-description fade-in-delay-3">
+          Crafting modern digital experiences with code and creativity.
+        </p>
+        <div class="hero-actions fade-in-delay-3">
+          <a href="#projects" class="btn btn-primary">View Work</a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bento Grid Layout Container -->
+    <div class="bento-container">
+
+      <!-- About Profile -->
+      <article id="about" class="bento-item profile-card">
+        <div class="card-content">
+          <div class="profile-image-container">
+            <img class="profile-img" src="images/profile_new.jpg" alt="Anthony Saavedra" />
+            <div class="status-badge"><span class="pulse"></span>Available for work</div>
+          </div>
+          <h3>About Me</h3>
+          <p>
+            I'm a Senior IT Student passionate about everything IT. Currently looking to be a reliable part of your
+            company.
+          </p>
+        </div>
+      </article>
+
+      <!-- Education -->
+      <article class="bento-item" style="grid-column: span 2;">
+        <h3><i class="fa-solid fa-graduation-cap" style="color: var(--primary);"></i> Education</h3>
+        <p style="font-weight: 700; margin-top: 0.5rem;">BS Information Technology</p>
+        <p class="text-muted">University of Cebu - Banilad</p>
+        <p class="text-muted" style="font-size: 0.85rem;">08/2022 - 01/2026</p>
+
+        <div style="margin-top: 1rem; border-top: 1px solid var(--border-light); padding-top: 0.5rem;">
+          <p style="font-weight: 700; font-size: 0.9rem;">Certificates</p>
+          <p class="text-muted" style="font-size: 0.8rem;">Intro to Networking (Cisco)</p>
+          <p class="text-muted" style="font-size: 0.8rem;">Computer System Servicing NC II</p>
+        </div>
+      </article>
+
+      <!-- Experience -->
+      <article class="bento-item" style="grid-column: span 2;">
+        <h3><i class="fa-solid fa-briefcase" style="color: var(--secondary);"></i> Experience</h3>
+        <div style="margin-top: 1rem;">
+          <p style="font-weight: 600;">Cashier @ Family-Owned</p>
+          <p class="text-muted" style="font-size: 0.85rem;">06/2024 - 08/2024</p>
+        </div>
+        <div style="margin-top: 0.75rem;">
+          <p style="font-weight: 600;">VA @ Chase Texas Lawfirm</p>
+          <p class="text-muted" style="font-size: 0.85rem;">04/2022 - 08/2022</p>
+        </div>
+      </article>
+
+      <!-- Real Skills -->
+      <article class="bento-item" style="grid-column: span 2;">
+        <h3><i class="fa-solid fa-code" style="color: var(--accent);"></i> Skills</h3>
+        <div class="skills-list" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;">
+          <span class="skill-tag">C# (3/5)</span>
+          <span class="skill-tag">Unity Engine (4/5)</span>
+          <span class="skill-tag">Front-End Web Dev (4/5)</span>
+          <span class="skill-tag">Time Management</span>
+          <span class="skill-tag">Teamwork</span>
+        </div>
+      </article>
+
+      <!-- Skill: Piano -->
+      <article id="hobby-piano" class="bento-item skill-card piano">
+        <div class="card-icon">
+          <i class="fa-solid fa-music"></i>
+        </div>
+        <h3>Piano</h3>
+        <p>I play the piano. Music has always been an impotant part in my life, it's my motivator, keeps things
+          intresting and never boring.</p>
+      </article>
+
+
+
+      <!-- Projects Section -->
+      <article id="projects" class="bento-item project-card" style="background-image: url('images/tindog-hero.png');">
+        <div class="project-overlay">
+          <h3>TinDog</h3>
+          <p>A dating app for dogs.</p>
+          <a href="https://github.com/itsAnthonySaavedra/TinDog-PHP.git" target="_blank" class="btn-link">View Project
+            <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="bento-item project-card" style="background-image: url('images/project-placeholder.svg');">
+        <div class="project-overlay">
+          <h3>BantayBahay</h3>
+          <p>IoT Home Security.</p>
+          <a href="https://github.com/itsAnthonySaavedra/BantayBahay.git" target="_blank" class="btn-link">View Project
+            <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+
+
+      <!-- Contact CTA -->
+      <section id="contact" class="bento-item contact-card">
+        <div class="contact-content">
+          <h2>Let's Connect</h2>
+          <p>Have a project in mind or just want to chat?</p>
+          <div class="contact-actions">
+            <a class="btn btn-glow" href="mailto:AnthonySaavedra@protonmail.com">
+              <i class="fa-solid fa-envelope"></i> Email Me
+            </a>
+            <p class="phone-display"><i class="fa-solid fa-phone"></i> +63 906 859 0432</p>
+            <a class="btn btn-secondary" href="#" download>
+              <i class="fa-solid fa-file-pdf"></i> Download Resume
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://github.com/itsAnthonySaavedra" target="_blank" aria-label="GitHub"><i
+            class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/roel-anthony-saavedra-226813328/" target="_blank" aria-label="LinkedIn"><i
+            class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/roelanthony.saavedra.27" target="_blank" aria-label="Facebook"><i
+            class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/itsanthonysaavedra/" target="_blank" aria-label="Instagram"><i
+            class="fa-brands fa-instagram"></i></a>
+      </div>
+      <p class="copyright">© 2025 Anthony Saavedra. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
